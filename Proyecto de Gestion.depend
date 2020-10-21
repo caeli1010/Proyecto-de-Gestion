@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1603315210 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\main.cpp
+	<iostream>
+	"Operacion.h"
+	"Ventas.h"
+	"Compras.h"
+
+1603312613 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\operacion.h
+
+1603315711 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\operacion.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"Operacion.h"
+
+1603312613 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\ventas.h
+	"Operacion.h"
+	"funcionesG.h"
+
+1603312529 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\funcionesg.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"funcionesG.h"
+	"Ventas.h"
+
+1603162186 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\funcionesg.h
+
+1603315469 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\ventas.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"Ventas.h"
+	"funcionesG.h"
+
+1603315329 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\compras.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"Compras.h"
+	"Operacion.h"
+
+1603315111 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\compras.h
+	"Operacion.h"
+
