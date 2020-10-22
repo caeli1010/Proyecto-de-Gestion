@@ -4,7 +4,6 @@
 #include <cstring>
 #include <conio.h>
 #include <time.h>
-#include "Operacion.h"
 
 using namespace std;
 
@@ -16,10 +15,7 @@ Operacion::Operacion(){
 }
 
 void  Operacion::CargarOp(){
-    setProducto();
-    setCantProd();
-    setPrecio();
-    setImpuesto();
+
    /// setMonto(precio, impuesto, cantidad);
 }
 
@@ -35,7 +31,7 @@ void Operacion::MostrarOp(){
 
 void Operacion::setMonto(){
       precio=getPrecio();
-      impuesto=getImpuesto();
+     /// impuesto=getImpuesto();
       cantidad=getcantProd();
     total=precio*cantidad*impuesto;
 }
