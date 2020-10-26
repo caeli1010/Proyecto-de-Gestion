@@ -4,127 +4,303 @@
 #include <cstring>
 #include <conio.h>
 #include <time.h>
-#include "Compras.h"
-
+#include <iomanip>
 using namespace std;
+#include "Compras.h"
+#include "Producto.h"
 
-const char * FILE_COMPRAS = "Achivos/Compras.dat";
+const char *FILE_COMPRA = "Archivos/Compra.dat";
 
-void Compras::CargarCompras(){
+void Compra::cargarCompra(){
+    setIdCompra();
+    setIdProveedor();
     setTipoFact();
-    setrofactura();
-    setpuntoVta();
+    setPuntoVta();
+    setNroFactura();
     setProducto();
     setCantProd();
     setPrecio();
     setImpuesto();
+   /// setTotal();
 }
 
- void Compras::MostrarCompras(){
-     cout<<"Tipo de Factura : "<<tipofactura<<endl;
-     cout<<"Numero:  "<<getNroFactura()<<endl;
-     cout<<"Numero:  "<<getpuntoVta()<<endl;
+ void Compra::mostrarCompra(){
+     cout<<"Id de compra : "<<idCompra<<endl;
+     cout<<"Id de proveedor : "<<idProveedor<<endl;
+     cout<<"Tipo de Factura : "<<tipoFactura<<endl;
+     cout<<"Numero : 000"<<puntoVta<<"-0000000"<<nroFactura<<endl;
+     cout<<"Producto:  "<<idProducto<<endl;
+     cout<<"Cantidad:  "<<cantidad<<endl;
+     cout<<"Precio por unidad:  "<<precio<<endl;
+     cout<<"Impuesto aplicado :  "<<impuesto<<endl;
+     //cout<<"Precio total :  "<<total<<endl;
+     system("pause");
  }
 
- void Compras::setnrofactura(){
+ void Compra::setIdCompra(){
+   this->idCompra=crearId();
+ }
+
+int Compra::getIdCompra(){
+   return idCompra;
+}
+
+void Compra::setIdProveedor(){
+     int codigo;
+     cout<<"ID de proveedor : ";
+     cin>>codigo;
+     while(!(codigo>0)){
+         cout<<"Codigo Incorrecto";
+         system("pause");
+         system("cls");
+         cout<<"ID de proveedor : ";
+         cin>>codigo;
+     }
+    this->idProveedor=codigo;
+}
+
+int Compra::getIdProveedor(){
+    return idProveedor;
+}
+
+ void Compra::setNroFactura(){
+     int numero;
     cout<<"Numero de  Factura : ";
-    cin>>nrofactura;
+    cin>>numero;
+    while(numero <= 0){
+     cout<<" Codigo incorrecto";
+     system ("cls");
+     cout<<"Numero de factura : ";
+     cin>>numero;
+    }
+   this-> nroFactura=numero;
  }
 
- int  Compras::getNroFactura(){
-     return nrofactura;
+ int  Compra::getNroFactura(){
+     return nroFactura;
  }
 
- void Compras::setTipoFact(){
+ void Compra::setTipoFact(){
+     char letra;
       cout<<"Tipo de factura : ";
-      cin>>tipofactura;
+      cin>>letra;
+      while(!(letra == 'A'  || letra == 'C' )) {
+     cout<<"Tipo de factura incorrecta";
+     system("pause");
+     system("cls");
+     cout<<"Tipo de factura : ";
+     cin>>letra;
+      }
+      this ->tipoFactura=letra;
  }
 
-char Compras::getTipoFact(){
-    return tipofactura;
+char Compra::getTipoFact(){
+    return tipoFactura;
 }
 
-void Compras::setProducto(){
-     cout<<"\nProducto : ";
-    cin>>IDproducto;
+void Compra::setProducto(){
+    int codigo;
+     cout<<"\nID de producto : ";
+    cin>>codigo;
+     ///Producto prod1;
+    while(codigo <= 0){
+    cout<<"Codigo de producto incorrecto ";
+      system("pause");
+     system("cls");
+      cout<<"\n ID  de producto : ";
+    cin>>codigo;
+    }
+   /// prod1.buscarProdxId(codigo);
+   this->idProducto=codigo;
 }
 
-//void Compras::setProducto(){
-//    int posicion;
-//    Producto  reg;
-//    cout<<" ID Producto : ";
-//    cin>>IDproducto;
-//    posicion=merca.buscarProd(IDproducto);
-//    reg=obtenerProducto(posicion);
-//    setPrecio(reg.getprecio());
-//    setImpuesto(reg.getIva());
-//}
 
-void Compras::setPrecio(){
+void Compra::setPrecio(){
+    int valor;
        cout<<"Precio : ";
-    cin>>precio;
+    cin>>valor;
+    while(valor <= 0){
+    cout<<"El valor ingresado es incorrecto ";
+      system("pause");
+     system("cls");
+      cout<<"\n Precio : ";
+    cin>>valor;
+    }
+   this->precio=valor;
 }
 
 
-void Compras::setCantProd(){
+void Compra::setCantProd(){
+       int unidad;
        cout<<"Cantidad : ";
-    cin>>cantidad;
+    cin>>unidad;
+    while(unidad <= 0){
+    cout<<"Cantidad incorrecta ";
+      system("pause");
+     system("cls");
+      cout<<"\n Cantidad : ";
+    cin>>unidad;
+    }
+   this->cantidad=unidad;
 }
 
-void Compras::setImpuesto(){
+void Compra::setImpuesto(){
+      int valor;
     cout<<"Impuesto : ";
-    cin>>impuesto;
+    cin>>valor;
+    while(!(valor > 0 || valor <=22 )){
+    cout<<"Valor de impuesto incorrecto ";
+      system("pause");
+     system("cls");
+      cout<<"\n Impuesto : ";
+    cin>>valor;
+    }
+   this->impuesto=valor;
 }
 
-void Compras::setpuntoVta(){
-      cout<<"Punto de venta: ";
-      cin>>puntoVta;
+void Compra::setPuntoVta(){
+//     numeracion(4);
+//    cout<<nroChar;
 }
 
-//  float Compras::getMonto(){
-//  return total;
-//  }
 
-int Compras::getProducto(){
-    return IDproducto;
+int Compra::getProducto(){
+    return idProducto;
 }
 
-float Compras::getPrecio(){
+float Compra::getPrecio(){
   return precio;
 }
 
-int Compras::getcantProd(){
+int Compra::getCantProd(){
    return cantidad;
 }
 
-int Compras::getpuntoVta(){
-   return puntoVta;
+void Compra::getPuntoVta(){
+    cout<<puntoVta;
+//   return *puntoVta;
 }
 
- bool Producto::grabarEnDisco(){
+ bool Compra::grabarEnDisco(){
 
         system("cls");
         FILE *p;
         bool chequeo;
 
-        p = fopen(FILE_PRODUCTOS,"ab");
+        p = fopen(FILE_COMPRA,"ab");
         if(p==NULL){
             cout << "Error al abrir el archivo \n";
             return false;
         }
-        chequeo = fwrite(this, sizeof(Producto),1,p);
+        chequeo = fwrite(this, sizeof(Compra),1,p);
         if(chequeo==1){
-
-            //msj("Carga exitosa",WHITE,GREEN,130,TEXT_LEFT);
-            //cout << "Registro exitoso";
+                cout<<"Carga exitosa";
             fclose(p);
-            //system("pause");
             return true;
         }
         else{
-            //cout << "El registro no pudo guardarse \n\n";
+            cout << "El registro no pudo guardarse \n\n";
             fclose(p);
-            //system("pause");
+            system("pause");
             return false;
         }
     }
+
+ bool Compra::leerDeDisco(int posicion){
+        bool leyo;
+        FILE *p;
+        p = fopen(FILE_COMPRA, "rb");
+        if (p == NULL){
+
+            return false;
+        }
+        fseek(p, posicion * sizeof(Compra), 0);
+        leyo = fread(this, sizeof(Compra), 1, p);
+        fclose(p);
+        return leyo;
+    }
+
+///----------------------------------FUNCIONES GLOBALES---------------------------------------------------
+
+ int crearId(){
+    int bytes, cant;
+    FILE *p = fopen(FILE_COMPRA, "rb");
+     if (p == NULL){
+        return 1;   ///dado que es el primer registro y no existe el archivo forzamos en nro 1
+    }
+      fseek(p, 0, SEEK_END);
+    bytes = ftell(p);
+    fclose(p);
+    return cant+1;
+}
+
+//string numeracion(int tam){
+//    char caracter;
+//    bool bandera=true;
+//    cout<<"Introduce un mumero: ";
+//
+//    while(bandera == true){
+//    int i=0, opc;
+////    nroChar[tam]={0};
+//    caracter=getch();
+//    while(caracter != 13 &&  i<tam){
+//
+//             if (caracter >=48 && caracter <=57){
+//            cout<<caracter;
+//            nroChar[i]=caracter;
+//            i++;}
+//       caracter=getch();}
+//
+//        cout<<endl;
+//        for(int i=0; i<tam; i++) {cout<<nroChar[i];}
+//
+//        cout<<"Confirma la numeracion :    1 - SI    o    0 - NO"  ;
+//        cin>>opc;
+//        if(opc ==1){
+//        bandera=false;
+//        }else{bandera=true;}
+//        }
+//        return *nroChar;
+//}
+
+
+
+   void listado_Compras(){
+        Compra aux;
+        int i = 0;
+        cout << left;
+        cout<<"*****************************************************************************************"<<endl;
+        cout<<"*_______________________________DETALLE DE FACTURA"<<setw(40)<<"______________________________________*"<<endl;
+        cout<<"*****************************************************************************************"<<endl;
+        cout<<endl;
+        cout<<setw(4)  <<"ID";
+        cout<<setw(10)<<"#FACTURA";
+        cout<<setw(10)<<"CODPROD.";
+        cout<<setw(10)<<"CANTIDAD";
+        cout<<setw(10)<<"_PRECIO_";
+        cout<<setw(10)<<"TOT_IVA.";
+        cout<<setw(10)<<"SUB_TOT.";
+        cout<<setw(7)  <<"TOTAL";
+        cout<<setw(6)  <<"PCTA";
+        cout<<setw(7)  <<"C_ENT";
+        cout<<setw(5)  <<"ENT";
+        cout<<endl;
+        cout<<"________________________________________________________________________________________"<<endl;
+        while (aux.leerDeDisco(i++)){
+        cout<< right;
+        cout<< setw(2)<<aux.idCompra;
+        cout<< setw(8)<< aux.nroFactura;
+        cout<< setw(10) << aux.idProducto;
+        cout<< setw(10) << aux.cantidad;
+        cout<< setw(10)<<aux.precio;
+        cout<<setw(10)<<aux.impuesto;
+        cout<<setw(10)<<aux.total;
+        cout<<setw(10)<<aux.total;
+        cout<<setw(6)<<aux.idCompra;
+        cout<<setw(5)<<aux.idProveedor ;
+        cout<<setw(5)<<"CL";
+        cout<<endl;
+        cout<<"________________________________________________________________________________________"<<endl;
+
+        }
+        }

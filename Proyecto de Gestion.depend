@@ -1,7 +1,12 @@
 # depslib dependency file v1.0
-1603325640 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\main.cpp
+1603585096 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\main.cpp
+	<cstdlib>
 	<iostream>
-	"Operacion.h"
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<conio.h>
+	<time.h>
 	"Ventas.h"
 	"Compras.h"
 	"Producto.h"
@@ -17,8 +22,7 @@
 	<time.h>
 	"Operacion.h"
 
-1603325505 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\ventas.h
-	"funcionesG.h"
+1603585889 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\ventas.h
 
 1603321304 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\funcionesg.cpp
 	<cstdlib>
@@ -30,9 +34,9 @@
 	"funcionesG.h"
 	"Ventas.h"
 
-1603320616 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\funcionesg.h
+1603329179 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\funcionesg.h
 
-1603325541 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\ventas.cpp
+1603586009 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\ventas.cpp
 	<cstdlib>
 	<iostream>
 	<cstdio>
@@ -40,18 +44,19 @@
 	<conio.h>
 	<time.h>
 	"Ventas.h"
-	"funcionesG.h"
 
-1603325541 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\compras.cpp
+1603585024 source:c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\src\compras.cpp
 	<cstdlib>
 	<iostream>
 	<cstdio>
 	<cstring>
 	<conio.h>
 	<time.h>
+	<iomanip>
 	"Compras.h"
+	"Producto.h"
 
-1603325920 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\compras.h
+1603584703 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\compras.h
 
 1603323925 c:\users\usuario\desktop\lab comp 1\lab comp2\poo\proyecto de gestion\include\producto.h
 

@@ -37,12 +37,9 @@
 		<Unit filename="include/Compras.h" />
 		<Unit filename="include/Producto.h" />
 		<Unit filename="include/Ventas.h" />
-		<Unit filename="include/funcionesG.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Compras.cpp" />
-		<Unit filename="src/Producto.cpp" />
 		<Unit filename="src/Ventas.cpp" />
-		<Unit filename="src/funcionesG.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
