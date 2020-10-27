@@ -3,14 +3,6 @@
 
 ///-----------------CLASE DE PRUEBA----------------------
 
- class Fecha{
- private:
-    int dia, mes, anio;
- public:
-    void cargarFecha();
-    int mostrarFecha();
- };
-
  class DetalleFactura{
 private:
     float total;
@@ -24,32 +16,35 @@ public:
 class Ventas{
 
     protected:
-    int idVenta;
-    Fecha fecha;
+    int idVenta,  codProd, idCliente,  cantidad, modoPago;
     char tipoFactura;
-    int idProducto;
-    int cantidad;
+    int  nroFactura;
+    Fecha fecha;
     DetalleFactura total;
-    int idCliente;
 
     public:
     void cargarVtas();  /// Carga los datos de las ventas
     void mostrarVtas(); /// Muestra los datos de las ventas
     void setIdVenta();  /// Asigna el Id de venta
-    void setIdCliente(); ///Asigna el modo de pago
+    void setIdCliente(); /// Corrobora el si el id de Cliente existe, sino pide que lo cargue
     void setTipoFact();
+    void setNroFact();
     void  setCantProd();
-    void setProducto();
-    char getTipoFact();
-    int getCantProd();
-    int getProducto();
+    void setCodProd);
+    void setOpcionPago();
     int getIdVenta();   /// Muestra el Id de ventas
     int getIdCliente(); ///Muestra  el modo de pago
+    char getTipoFact();
+    int getNroFact();
+    int getCodProd();
+    int getCantProd();
+    int getOpcionPago();
     bool grabarEnDisco();///GRABA EN UN ARCHIVO UN REGISTRO DE TIPO PRODUCTO **HECHA**
 };
 
 ///-----------------------PROTOTIPOS GLOBALES
 int crearIdVentas();
+int crearIdXFact(char);
 int posicionIdCliente();
 Ventas buscarVentaXidCliente(int);
 

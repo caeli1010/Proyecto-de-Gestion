@@ -5,22 +5,15 @@
 #include <conio.h>
 #include <time.h>
 #include "Ventas.h"
+//#include "../include/Producto.h"
 
 using namespace std;
 
-const char * FILE_VENTAS = "Archivos/Ventas.dat";
+const char * FILE_VENTAS = "Achivos/Ventas.dat";
+const char * FILE_FACTURAA = "Archivos/FacturaA.dat";
+const char * FILE_FACTURAB = "Archivos/FacturaB.dat";
 
 ///---------------------------------METODOS DE PRUEBA--------------------------------------------------
-
- void Fecha::cargarFecha() {
-     dia=25;
-     mes=10;
-     anio=2020;
- }
-
- int Fecha::mostrarFecha(){
-     cout<<"Fecha : "<<dia<<mes<<anio;
- }
 
 void DetalleFactura::setPrecioFinal(){
       cout<<"Precio Final : "  ;
@@ -34,18 +27,21 @@ float DetalleFactura::getPrecioFinal(){
 ///----------------------------METODOS CLASE VENTAS---------------------------
 
 void Ventas::cargarVtas(){
-    setIdVenta();
-    setIdCliente();
-    setTipoFact();
-    setProducto();
+    setCodProd);
     setCantProd();
+    setIdVenta();
    // fecha.cargarFecha();
+    setTipoFact();
+    setNroFact();
+    setIdCliente();
+    setOpcionPago();
     total.getPrecioFinal();
 }
 
  void Ventas::mostrarVtas(){
     cout<<"Id de ventas : "<<idVenta<<endl;
      cout<<"Id de cliente : "<<idCliente<<endl;
+     cout<<"Tipo factura
 //cout<<"Fecha : "<<fecha.mostrarFecha()<<endl;
      cout<<"Precio Final : "<<total.getPrecioFinal()<<endl;
      system("pause");
@@ -55,6 +51,10 @@ void Ventas::cargarVtas(){
  void Ventas::setIdVenta(){
     idVenta= crearIdVentas();
  }
+
+int Ventas::getIdVenta(){
+   return idVenta;
+}
 
  void Ventas::setIdCliente(){
     int dato;
@@ -67,41 +67,48 @@ void Ventas::cargarVtas(){
    cout<<"Id de cliente : " ;
     cin>>dato;
     }
+   /// listarEntidadPorID(dato);
     this->idCliente=dato;
  }
 
-int Ventas::getIdVenta(){
-   return idVenta;
-}
 
 void Ventas::setTipoFact(){
-     char letra;
+     char tipo;
       cout<<"Tipo de factura : ";
-      cin>>letra;
-      while(!(letra == 'A'  || letra == 'B' )) {
+      cin>>tipo;
+      while(!(tipo == 'A'  || tipo == 'B' )) {
      cout<<"Tipo de factura incorrecta";
      system("pause");
      system("cls");
      cout<<"Tipo de factura : ";
-     cin>>letra;
+     cin>>tipo;
       }
-      this ->tipoFactura=letra;
+      int crearIdXFact(tipo);
+      this ->tipoFactura=tipo;
  }
 
 char Ventas::getTipoFact(){
     return tipoFactura;
 }
 
-void Ventas::setProducto(){
+void Ventas::setNroFact(){
+  this-> nroFactura=crearIdXFact(char) ;
+}
+
+int Ventas::getNroFact(){
+   return nroFactura;
+}
+
+void Ventas::setCodProd()){
     int codigo;
-     cout<<"\nID de producto : ";
+     cout<<"\n Codigo de producto : ";
     cin>>codigo;
      ///Producto prod1;
     while(codigo <= 0){
     cout<<"Codigo de producto incorrecto ";
       system("pause");
      system("cls");
-      cout<<"\n ID  de producto : ";
+      cout<<"\n Codigo de producto : ";
     cin>>codigo;
     }
    /// prod1.buscarProdxId(codigo);
@@ -123,11 +130,37 @@ void Ventas::setCantProd(){
       cout<<"\n Cantidad : ";
     cin>>unidad;
     }
+    ///Falta funcion para verificar cantidad existente en el stock
    this->cantidad=unidad;
 }
 
 int Ventas::getCantProd(){
    return cantidad;
+}
+
+ void Ventas::setOpcionPago(){
+  int modo;
+     cout<<"Opcion de pago : (1- Efectivo, 2- Transferencia, 3 - Tarjeta de credito ";
+    cin>>modo;
+
+ switch(modo){
+ case 1:
+     this->modoPago=modo;
+     break;
+ case 2:
+    this->modoPago=modo;
+    break;
+ case 3:
+    this->modoPago=modo;
+    break;
+ default:
+   cout<<"Opcion de pago incorrecto ";
+   break;
+ }
+ }
+
+int Ventas::getOpcionPago(){
+    return modoPago;
 }
 
  bool Ventas::grabarEnDisco(){
@@ -169,5 +202,30 @@ int Ventas::getCantProd(){
       fseek(p, 0, SEEK_END);
     bytes = ftell(p);
     fclose(p);
+    return cant+1;
+}
+
+
+ int crearIdXFact(char tipo='B'){
+    int bytes, cant;
+
+    if(tipo == 'A' || tipo == 'a')  {
+    FILE *p = fopen(FILE_FACTURAA, "rb");
+     if (p == NULL){
+        return 13;   ///dado que es el primer registro y no existe el archivo forzamos en nro 1
+    }
+      fseek(p, 0, SEEK_END);
+            bytes = ftell(p);
+            fclose(p);
+    }else{
+        FILE *p = fopen(FILE_FACTURAB, "rb");
+         if (p == NULL){
+            return 18;   ///dado que es el primer registro y no existe el archivo forzamos en nro 1
+    }
+      fseek(p, 0, SEEK_END);
+            bytes = ftell(p);
+            fclose(p);
+     }
+    cant = bytes / sizeof(Ventas);
     return cant+1;
 }

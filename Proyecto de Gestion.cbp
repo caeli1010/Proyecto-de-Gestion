@@ -35,7 +35,6 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Compras.h" />
-		<Unit filename="include/Producto.h" />
 		<Unit filename="include/Ventas.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Compras.cpp" />
