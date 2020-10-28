@@ -8,13 +8,13 @@ class Compra{
     int idCompra; /// ID autonumerico de la compra
    int idProveedor; /// ID del proveedor   ingresado en forma manual
    char tipoFactura; ///Facturas de dos tipos (A: empresa)
-    int puntoVta="3";    /// Representa el numero de venta de la sucursal del proveedor( mayor a 0)
-    int nroFactura=5 ;  ///Numero de factura autonumerico (-00000000)
+    int puntoVta;    /// Representa el numero de venta de la sucursal del proveedor( mayor a 0)
+    int nroFactura ;  ///Numero de factura autonumerico (-00000000)
      int idProducto;  /// ID ingresado en forma manual
      int cantidad;  /// Cantidad del producto
      float precio;  /// Precio unitario del producto
      int impuesto;  /// Valor del Impuesto aplicado
-     float total=500; /// Total a pagar, calculado con el impuesto, el precio y la cantidad
+     float total; /// Total a pagar, calculado con el impuesto, el precio y la cantidad
 
     public:
     void cargarCompra();  /// Carga los datos de las ventas

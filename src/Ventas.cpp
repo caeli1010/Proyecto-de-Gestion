@@ -41,7 +41,7 @@ void Ventas::cargarVtas(){
  void Ventas::mostrarVtas(){
     cout<<"Id de ventas : "<<idVenta<<endl;
      cout<<"Id de cliente : "<<idCliente<<endl;
-     cout<<"Tipo factura
+     cout<<"Tipo factura : " ;
 //cout<<"Fecha : "<<fecha.mostrarFecha()<<endl;
      cout<<"Precio Final : "<<total.getPrecioFinal()<<endl;
      system("pause");
