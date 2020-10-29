@@ -1,0 +1,756 @@
+# depslib dependency file v1.0
+1603570941 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<string.h>
+	<cstdio>
+	"Utilidades/menus.h"
+	"Include/Persona.h"
+	"Utilidades/validaciones.h"
+	"Direccion.h"
+	"Include/Entidad.h"
+	"Include/Ventas.h"
+	"DetalleFactura.h"
+	"Include/Usuario.h"
+
+1603061340 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\utilidades\menus.h
+
+1600925322 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\utilidades\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1600742332 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\utilidades\ui.h
+
+1600742332 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\utilidades\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1603565525 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\utilidades\menus.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	<iomanip>
+	"../Utilidades/menus.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"../Include/Entidad.h"
+	"../Include/Compra.h"
+	"../Include/DetalleFactura.h"
+
+1603067768 source:d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\main.cpp
+	<iostream>
+	"Utilidades/menus.h"
+	"Persona.h"
+
+1603061752 d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\utilidades\menus.h
+
+1603061752 source:d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\utilidades\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1603061752 d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\utilidades\ui.h
+
+1603061752 d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\utilidades\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1603067549 source:d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\utilidades\validaciones.cpp
+
+1603067612 source:d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\src\persona.cpp
+	<iostream>
+	<cstring>
+	"Persona.h"
+
+1603067565 d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\include\persona.h
+
+1603067699 source:d:\reuge\documents\utn\2do cuatri\lab2\clases\tpcontable\sistemapyme\utilidades\menus.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	<iomanip>
+	"../Utilidades/menus.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+
+1603399234 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\persona.cpp
+	<iostream>
+	<cstring>
+	<iomanip>
+	"Persona.h"
+	"Fecha.h"
+	"../Utilidades/rlutil.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/validaciones.h"
+
+1603399227 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\persona.h
+	"Direccion.h"
+	"Fecha.h"
+
+1603217952 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\utilidades\validaciones.cpp
+	<iostream>
+	<string>
+	<string.h>
+	<stdlib.h>
+	"../Utilidades/rlutil.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/menus.h"
+	"../Include/Persona.h"
+	"validaciones.h"
+
+1603211836 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\utilidades\validaciones.h
+
+1603137668 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\fecha.cpp
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<time.h>
+	"Direccion.h"
+	"Fecha.h"
+
+1603218166 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\direccion.h
+	"Direccion.h"
+	"Fecha.h"
+	"string.h"
+
+1602556475 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\fecha.h
+	<time.h>
+
+1603249273 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\cliente.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<cstdio>
+	<stdlib.h>
+	"../Utilidades/menus.h"
+	"Persona.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"../Utilidades/validaciones.h"
+	"Cliente.h"
+
+1603249251 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\cliente.h
+	"../Include/Persona.h"
+
+1603218175 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\direccion.cpp
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	"Direccion.h"
+	"Fecha.h"
+
+1603248291 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\operacion.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"Operacion.h"
+
+1603248854 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\operacion.h
+
+1603246205 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\calculadora.cpp
+	<iostream>
+	"calculadora.h"
+
+1603246205 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\calculadora.h
+
+1603382103 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\compras.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"../include/Compras.h"
+	"../include/Producto.h"
+
+1603381234 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\compras.h
+
+1603382131 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\ventas.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"Ventas.h"
+	"../include/Producto.h"
+
+1603381048 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\ventas.h
+
+1603381547 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\producto.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"../Include/Producto.h"
+
+1603404507 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\producto.h
+
+1603400611 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\entidad.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<cstdio>
+	<stdlib.h>
+	"../Utilidades/menus.h"
+	"Persona.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"../Utilidades/validaciones.h"
+	"Entidad.h"
+
+1603398367 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\entidad.h
+	"../Include/Persona.h"
+
+1603400743 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\compra.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"../include/Compra.h"
+	"../include/Producto.h"
+
+1603400375 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\compra.h
+
+1603491375 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\detallefactura.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<string.h>
+	<cstdio>
+	<iomanip>
+	"DetalleFactura.h"
+	"Entidad.h"
+
+1603491375 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\detallefactura.h
+
+1603570423 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\login.cpp
+
+1603568857 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\login.h
+
+1603570902 source:c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\src\usuario.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<string.h>
+	<cstdio>
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"Usuario.h"
+
+1603573114 c:\users\isi97\onedrive\escritorio\isidoro\facultad\2do cuatrimestre 2020\laboratorio ii\sistemapyme\include\usuario.h
+
+1603911232 source:c:\users\usuario\desktop\sistemapyme bkp\main.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	<iomanip>
+	"../Utilidades/menus.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"../Include/Entidad.h"
+	"../Include/Compra.h"
+	"../Include/DetalleFactura.h"
+	"../Include/Ventas.h"
+
+1603061947 c:\users\usuario\desktop\sistemapyme bkp\utilidades\menus.h
+
+1603404706 c:\users\usuario\desktop\sistemapyme bkp\include\persona.h
+	"Direccion.h"
+	"Fecha.h"
+
+1603246129 c:\users\usuario\desktop\sistemapyme bkp\include\direccion.h
+	"Direccion.h"
+	"Fecha.h"
+	"string.h"
+
+1603246129 c:\users\usuario\desktop\sistemapyme bkp\include\fecha.h
+	<time.h>
+
+1603246129 c:\users\usuario\desktop\sistemapyme bkp\utilidades\validaciones.h
+
+1603920273 c:\users\usuario\desktop\sistemapyme bkp\include\entidad.h
+	"../Include/Persona.h"
+
+1603919958 c:\users\usuario\desktop\sistemapyme bkp\include\ventas.h
+	"Fecha.h"
+	"DetalleFactura.h"
+	"Calculadora.h"
+	"Producto.h"
+	"Entidad.h"
+
+1603495259 c:\users\usuario\desktop\sistemapyme bkp\include\detallefactura.h
+
+1603580277 c:\users\usuario\desktop\sistemapyme bkp\include\usuario.h
+
+1603246129 source:c:\users\usuario\desktop\sistemapyme bkp\src\calculadora.cpp
+	<iostream>
+	"calculadora.h"
+
+1603246129 c:\users\usuario\desktop\sistemapyme bkp\include\calculadora.h
+
+1603246129 source:c:\users\usuario\desktop\sistemapyme bkp\src\direccion.cpp
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	"Direccion.h"
+	"Fecha.h"
+
+1603916191 source:c:\users\usuario\desktop\sistemapyme bkp\src\entidad.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<cstdio>
+	<stdlib.h>
+	"../Utilidades/menus.h"
+	"Persona.h"
+	"../Utilidades/validaciones.h"
+	"Entidad.h"
+	"../Utilidades/centrarTabla.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+
+1603916190 c:\users\usuario\desktop\sistemapyme bkp\utilidades\ui.h
+
+1603916190 c:\users\usuario\desktop\sistemapyme bkp\utilidades\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1603246129 source:c:\users\usuario\desktop\sistemapyme bkp\src\fecha.cpp
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<time.h>
+	"Direccion.h"
+	"Fecha.h"
+
+1603404706 source:c:\users\usuario\desktop\sistemapyme bkp\src\persona.cpp
+	<iostream>
+	<cstring>
+	<iomanip>
+	"Persona.h"
+	"Fecha.h"
+	"../Utilidades/rlutil.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/validaciones.h"
+
+1603912500 source:c:\users\usuario\desktop\sistemapyme bkp\src\producto.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"../Include/Producto.h"
+
+1603912535 c:\users\usuario\desktop\sistemapyme bkp\include\producto.h
+
+1603834948 source:c:\users\usuario\desktop\sistemapyme bkp\utilidades\menus.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	<iomanip>
+	"../Utilidades/menus.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"../Include/Entidad.h"
+	"../Include/Compra.h"
+	"../Include/DetalleFactura.h"
+	"../Include/Ventas.h"
+
+1603822682 c:\users\usuario\desktop\sistemapyme bkp\include\compra.h
+
+1603916190 source:c:\users\usuario\desktop\sistemapyme bkp\utilidades\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1603246129 source:c:\users\usuario\desktop\sistemapyme bkp\utilidades\validaciones.cpp
+	<iostream>
+	<string>
+	<string.h>
+	<stdlib.h>
+	"../Utilidades/rlutil.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/menus.h"
+	"../Include/Persona.h"
+	"validaciones.h"
+
+1603580277 source:c:\users\usuario\desktop\sistemapyme bkp\src\usuario.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<string.h>
+	<cstdio>
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"Usuario.h"
+
+1603761382 source:c:\users\usuario\desktop\sistemapyme bkp\src\compra.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	<iomanip>
+	"Compra.h"
+	"Producto.h"
+	"Fecha.h"
+
+1603920226 source:c:\users\usuario\desktop\sistemapyme bkp\src\ventas.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"Ventas.h"
+	"Fecha.h"
+	"DetalleFactura.h"
+	"Calculadora.h"
+	"Producto.h"
+	"../Utilidades/centrarTabla.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+
+1603824981 source:c:\users\usuario\desktop\sistemapyme bkp\src\detallefactura.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<string.h>
+	<cstdio>
+	<iomanip>
+	<conio.h>
+	"DetalleFactura.h"
+	"Entidad.h"
+	"../Utilidades/centrarTabla.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+
+1603916190 c:\users\usuario\desktop\sistemapyme bkp\utilidades\centrartabla.h
+
+1603916190 source:c:\users\usuario\desktop\sistemapyme bkp\utilidades\centrartabla.cpp
+	<iostream>
+	<iomanip>
+	<conio.h>
+	<sstream>
+	"centrarTabla.h"
+
+1603920407 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\main.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	<iomanip>
+	"../Utilidades/menus.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"../Include/Entidad.h"
+	"../Include/Compra.h"
+	"../Include/DetalleFactura.h"
+	"../Include/Ventas.h"
+
+1603768966 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\utilidades\menus.h
+
+1603061947 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\utilidades\ui.h
+
+1603061947 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\utilidades\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1603768966 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\include\entidad.h
+	"../Include/Persona.h"
+
+1603404706 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\include\persona.h
+	"Direccion.h"
+	"Fecha.h"
+
+1603246129 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\include\direccion.h
+	"Direccion.h"
+	"Fecha.h"
+	"string.h"
+
+1603246129 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\include\fecha.h
+	<time.h>
+
+1603404706 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\include\compra.h
+
+1603495259 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\include\detallefactura.h
+
+1603404706 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\include\ventas.h
+
+1603246129 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\calculadora.cpp
+	<iostream>
+	"calculadora.h"
+
+1603246129 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\calculadora.h
+
+1603761382 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\compra.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	<iomanip>
+	"Compra.h"
+	"Producto.h"
+	"Fecha.h"
+
+1603822682 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\compra.h
+
+1603912535 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\producto.h
+
+1603246129 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\fecha.h
+	<time.h>
+
+1603824981 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\detallefactura.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<string.h>
+	<cstdio>
+	<iomanip>
+	<conio.h>
+	"DetalleFactura.h"
+	"Entidad.h"
+	"../Utilidades/centrarTabla.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+
+1603495259 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\detallefactura.h
+
+1603920273 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\entidad.h
+	"../Include/Persona.h"
+
+1603404706 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\persona.h
+	"Direccion.h"
+	"Fecha.h"
+
+1603246129 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\direccion.h
+	"Direccion.h"
+	"Fecha.h"
+	"string.h"
+
+1603916190 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\centrartabla.h
+
+1603916190 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\ui.h
+
+1603916190 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1603246129 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\direccion.cpp
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	"Direccion.h"
+	"Fecha.h"
+
+1603916191 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\entidad.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<cstdio>
+	<stdlib.h>
+	"../Utilidades/menus.h"
+	"Persona.h"
+	"../Utilidades/validaciones.h"
+	"Entidad.h"
+	"../Utilidades/centrarTabla.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+
+1603061947 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\menus.h
+
+1603246129 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\validaciones.h
+
+1603246129 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\fecha.cpp
+	<iostream>
+	<cstdlib>
+	<iomanip>
+	<time.h>
+	"Direccion.h"
+	"Fecha.h"
+
+1603404706 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\persona.cpp
+	<iostream>
+	<cstring>
+	<iomanip>
+	"Persona.h"
+	"Fecha.h"
+	"../Utilidades/rlutil.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/validaciones.h"
+
+1603912500 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\producto.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	"../Include/Producto.h"
+
+1603580277 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\usuario.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<string.h>
+	<cstdio>
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"Usuario.h"
+
+1603580277 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\usuario.h
+
+1603920226 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\src\ventas.cpp
+	<cstdlib>
+	<iostream>
+	<cstdio>
+	<cstring>
+	<conio.h>
+	<time.h>
+	"Ventas.h"
+	"Fecha.h"
+	"DetalleFactura.h"
+	"Calculadora.h"
+	"Producto.h"
+	"../Utilidades/centrarTabla.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+
+1603919958 c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\include\ventas.h
+	"Fecha.h"
+	"DetalleFactura.h"
+	"Calculadora.h"
+	"Producto.h"
+	"Entidad.h"
+
+1603916190 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\centrartabla.cpp
+	<iostream>
+	<iomanip>
+	<conio.h>
+	<sstream>
+	"centrarTabla.h"
+
+1603834948 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\menus.cpp
+	<iostream>
+	<cstdio>
+	<stdlib.h>
+	<ctime>
+	<string.h>
+	<cstring>
+	<cctype>
+	<algorithm>
+	<iomanip>
+	"../Utilidades/menus.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/rlutil.h"
+	"../Include/Entidad.h"
+	"../Include/Compra.h"
+	"../Include/DetalleFactura.h"
+	"../Include/Ventas.h"
+
+1603916190 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1603246129 source:c:\users\usuario\desktop\lab comp 1\lab comp2\sistemapyme\elizabeth\utilidades\validaciones.cpp
+	<iostream>
+	<string>
+	<string.h>
+	<stdlib.h>
+	"../Utilidades/rlutil.h"
+	"../Utilidades/ui.h"
+	"../Utilidades/menus.h"
+	"../Include/Persona.h"
+	"validaciones.h"
+
