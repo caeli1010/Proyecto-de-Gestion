@@ -202,6 +202,7 @@ int Ventas::getOpcionPago(){
       fseek(p, 0, SEEK_END);
     bytes = ftell(p);
     fclose(p);
+    cant = bytes / sizeof(Ventas)
     return cant+1;
 }
 
